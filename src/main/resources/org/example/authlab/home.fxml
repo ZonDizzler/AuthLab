@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.authlab.HomeController" spacing="20" alignment="CENTER">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <!-- Title -->
+    <Text text="Home" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+    <!-- Buttons -->
+    <Button text="Login" fx:id="loginButton" minWidth="100" onAction="#onLoginButtonClick"/>
+    <Button text="Signup" fx:id="signupButton" minWidth="100" onAction="#onSignupButtonClick"/>
+
+    <!-- Semester & Name -->
+    <Text text="CSC411 Fall 2024 John Distler" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+</VBox>
